@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.container{
+    height: 400px;
+    width: 400px;
+    border: 2px solid #2b2a2a;
+    margin-bottom: 8px;
+    display: grid;
+}
+
+button{
+    text-align: center;
+    padding: 8px;
+    background-color: darkolivegreen;
+    color: aliceblue;
+    border-radius: 8px;
+}
+
+.x-btn{
+    display: flex;
+    gap: 50px;
+}
