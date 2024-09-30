@@ -58,3 +58,9 @@ function getColor(){
 
     return style;
 }
+
+function clearDrawing(){
+    let box = document.querySelectorAll("div");
+    box.forEach((div) => div.style.background = "white");
+}
+
