@@ -1,6 +1,10 @@
+// starting my code
 let color = "black"
 const btnBlack = document.querySelector(".black");
 const btnColor = document.querySelector(".colors");
+let click = false;
+
+// function that waits for HTML and CSS to load first
 document.addEventListener("DOMContentLoaded", () =>{
     createBorder(6);
 
@@ -10,8 +14,23 @@ document.addEventListener("DOMContentLoaded", () =>{
         createBorder(size);
     });    
 
+    // putting pencil down or up
+    document.querySelector("body").addEventListener("click" , (e) =>{
+        if(e.target.tagName !== "button"){
+            click = !click;
+            let draw = document.querySelector("#info");
+            if(click){
+                draw.textContent = "You Can Draw";
+            }
+            else{
+                draw.textContent = "Click On The Broad To start Drawing";
+            }
+        }
+    });
+
 });
 
+// function for pencil to drawing on the broad
 function createBorder(size){
      const border = document.querySelector(".container");
      border.style.gridTemplateColumns = `repeat(${size} , 1fr)`;
@@ -46,16 +65,17 @@ function setColor(choice){
 
 function getColor(){
     let style;
-    if (color === "colors"){
-        style = this.style.background = `hsl(${Math.random() * 360}, 100% , 50%)`;
+    if (click){
+        if (color === "colors"){
+            style = this.style.background = `hsl(${Math.random() * 360}, 100% , 50%)`;
+        }
+        else if(color === "erase"){
+            style = this.style.background = 'white';
+        }
+        else{
+            style = this.style.background = 'black';
+        }
     }
-    else if(color === "erase"){
-        style = this.style.background = 'white';
-    }
-    else{
-        style = this.style.background = 'black';
-    }
-
     return style;
 }
 
