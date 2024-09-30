@@ -1,4 +1,6 @@
-let color = "black";
+let color = "black"
+const btnBlack = document.querySelector(".black");
+const btnColor = document.querySelector(".colors");
 document.addEventListener("DOMContentLoaded", () =>{
     createBorder(6);
 
@@ -6,7 +8,8 @@ document.addEventListener("DOMContentLoaded", () =>{
     num.addEventListener("click" , () => {
         let size = getUserNumber();
         createBorder(size);
-    });
+    });    
+
 });
 
 function createBorder(size){
@@ -17,11 +20,11 @@ function createBorder(size){
 
      for (let x = 0; x < boxNum; x++){
         let div = document.createElement("div");
-        div.addEventListener("mouseover", () => {
-            div.style.background = "black";
-        });
-        border.appendChild(div);
-     }
+        div.addEventListener("mouseover", getColor);
+            border.appendChild(div);
+            
+        }
+     
 }
 
 function getUserNumber(){
@@ -36,6 +39,22 @@ function getUserNumber(){
     return userNum;
 }
 
-function setColor(color){
-    
+function setColor(choice){
+    color = choice;
+    return color;
+}
+
+function getColor(){
+    let style;
+    if (color === "colors"){
+        style = this.style.background = `hsl(${Math.random() * 360}, 100% , 50%)`;
+    }
+    else if(color === "erase"){
+        style = this.style.background = 'white';
+    }
+    else{
+        style = this.style.background = 'black';
+    }
+
+    return style;
 }
