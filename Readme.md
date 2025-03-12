@@ -29,3 +29,9 @@ A modern web-based version of the classic Etch-A-Sketch toy! Users can draw on a
    - Use the `ERASE` button to erase parts of the drawing.
    - Use the `CLEAR` button to reset the board.
 5. Toggle drawing mode by clicking anywhere outside the buttons.
+
+## File Structure
+
+- `index.html`: Contains the structure of the web page.
+- `style.css`: Styles the web page elements.
+- `main.js`: Provides the logic for grid creation, drawing, and color selection.
