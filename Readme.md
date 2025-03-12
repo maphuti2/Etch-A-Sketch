@@ -17,3 +17,15 @@ A modern web-based version of the classic Etch-A-Sketch toy! Users can draw on a
 - **HTML5** for structure
 - **CSS3** for styling
 - **JavaScript** for interactivity
+
+## How to Use
+
+1. Clone the repository or download the files.
+2. Open `index.html` in your preferred web browser.
+3. Choose the grid size by clicking the `Add` button and entering a number between 1 and 100.
+4. Start drawing by hovering over the grid with your mouse:
+   - Use the `Black` button to draw in black.
+   - Use the `MANY COLORS` button to draw with random colors.
+   - Use the `ERASE` button to erase parts of the drawing.
+   - Use the `CLEAR` button to reset the board.
+5. Toggle drawing mode by clicking anywhere outside the buttons.
