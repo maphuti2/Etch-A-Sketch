@@ -38,7 +38,6 @@ A modern web-based version of the classic Etch-A-Sketch toy! Users can draw on a
 
 ## Preview
 
-![Etch-A-Sketch Demo](URL) _(Add a link to your project screenshot or demo video here)_
 Try the live demo [here](https://maphuti2.github.io/Etch-A-Sketch/).
 
 ## Installation
