@@ -44,5 +44,5 @@ Try the live demo [here](https://maphuti2.github.io/Etch-A-Sketch/).
 
 1. Download or clone the project:
    ```bash
-   git clone https://github.com/maphuti2/etch-a-sketch.git
+   git clone https://github.com/maphuti2/Etch-A-Sketch.git
    ```
