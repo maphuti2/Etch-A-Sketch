@@ -35,3 +35,15 @@ A modern web-based version of the classic Etch-A-Sketch toy! Users can draw on a
 - `index.html`: Contains the structure of the web page.
 - `style.css`: Styles the web page elements.
 - `main.js`: Provides the logic for grid creation, drawing, and color selection.
+
+## Preview
+
+![Etch-A-Sketch Demo](URL) _(Add a link to your project screenshot or demo video here)_
+Try the live demo [here](https://maphuti2.github.io/Etch-A-Sketch/).
+
+## Installation
+
+1. Download or clone the project:
+   ```bash
+   git clone https://github.com/maphuti2/etch-a-sketch.git
+   ```
